@@ -1,10 +1,10 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/36f17c10-c75e-4993-b160-88b3184e5267/deploy-status)](https://app.netlify.com/sites/carllang/deploys)
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
   </a>
 </p>
-[![Netlify Status](https://api.netlify.com/api/v1/badges/36f17c10-c75e-4993-b160-88b3184e5267/deploy-status)](https://app.netlify.com/sites/carllang/deploys)
 <h1 align="center">
   Gatsby's default starter
 </h1>
