@@ -26,28 +26,28 @@ const Layout = ({ children }) => {
 
   return (
     <div style={{ backgroundColor: "#111111" }}>
-      {/* <Particles
+      <Particles
         style={{
           position: "absolute",
           top: "100px",
           right: "10px",
         }}
         width="100%"
-        height="250px"
+        height="100%"
         params={{
           particles: {
             number: {
-              value: 15,
+              value: 100,
             },
             size: {
-              value: 5,
+              value: 10,
             },
             color: {
               value: ["#2c60c1", "#333333", "999999"],
             },
           },
         }}
-      /> */}
+      />
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
@@ -55,9 +55,15 @@ const Layout = ({ children }) => {
           maxWidth: 960,
           padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
+          backgroundColor: "#111111",
         }}
       >
-        <main style={{ minHeight: "900px", margin: "150px 0 0" }}>
+        <main
+          style={{
+            minHeight: "900px",
+            margin: "150px 0 0",
+          }}
+        >
           {children}
         </main>
         <footer>

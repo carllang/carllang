@@ -21,7 +21,7 @@ const IndexPage = () => (
       <div
         style={{
           marginBottom: `1.45rem`,
-          opacity: "0.6",
+          opacity: "1",
           zIndex: "999",
           width: `300px`,
         }}
