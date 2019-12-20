@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import Particles from "react-particles-js"
 
 import Header from "./header"
 import "./layout.css"
@@ -24,7 +25,29 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div style={{ backgroundColor: "#111111" }}>
+      {/* <Particles
+        style={{
+          position: "absolute",
+          top: "100px",
+          right: "10px",
+        }}
+        width="100%"
+        height="250px"
+        params={{
+          particles: {
+            number: {
+              value: 15,
+            },
+            size: {
+              value: 5,
+            },
+            color: {
+              value: ["#2c60c1", "#333333", "999999"],
+            },
+          },
+        }}
+      /> */}
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
@@ -34,14 +57,18 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
-        <main>{children}</main>
+        <main style={{ minHeight: "900px", margin: "150px 0 0" }}>
+          {children}
+        </main>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://www.gatsbyjs.org" style={{ color: "#ffffff" }}>
+            Gatsby
+          </a>
         </footer>
       </div>
-    </>
+    </div>
   )
 }
 
